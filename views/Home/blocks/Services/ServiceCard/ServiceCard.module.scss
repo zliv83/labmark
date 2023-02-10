@@ -1,0 +1,30 @@
+@import '@/styles/__settings';
+
+.serviceCard {
+  display: flex;
+  flex-direction: column;
+  @include center();
+  position: relative;
+  gap: 2rem;
+  background-image: url('../../../../../public/exteriors.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: toRem(400);
+  z-index: 1;
+
+  .overlay {
+    @include overlay();
+  }
+
+  .title {
+    font-size: 3rem;
+    font-weight: 500;
+    color: $whiteText;
+    z-index: 3;
+  }
+
+  .button {
+    z-index: 3;
+  }
+}
