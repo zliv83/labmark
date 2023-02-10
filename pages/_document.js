@@ -7,7 +7,7 @@ export default function Document() {
         <meta charSet="utf-8" />
         <link
           rel="shortcut icon"
-          href="https://res.cloudinary.com/dci8xvvvp/image/upload/v1674581434/assets/webDev_dagmoe.ico"
+          href="https://res.cloudinary.com/dci8xvvvp/image/upload/v1676054829/assets/icon-roof_uec3kl.avif"
         />
       </Head>
       <body>

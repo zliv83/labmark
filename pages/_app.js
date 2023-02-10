@@ -1,11 +1,14 @@
 import Head from 'next/head';
-import { Montserrat } from '@next/font/google';
+import { Lato } from '@next/font/google';
+
+import Layout from '@/components/layout';
 
 import '@/styles/globals.scss';
+import { SidebarProvider } from '@/lib/SidebarProvider';
 
-const mont = Montserrat({
+const mont = Lato({
   subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  weight: ['100', '300', '400', '700', '900'],
 });
 
 export default function App({ Component, pageProps }) {
@@ -18,7 +21,11 @@ export default function App({ Component, pageProps }) {
         />
       </Head>
       <main id="modal-root" className={mont.className}>
-        <Component {...pageProps} />
+        <SidebarProvider>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </SidebarProvider>
       </main>
     </>
   );

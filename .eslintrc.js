@@ -24,5 +24,6 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
     'import/no-unresolved': 'off',
     'object-curly-newline': 'off',
+    'import/extensions': 'off',
   },
 };

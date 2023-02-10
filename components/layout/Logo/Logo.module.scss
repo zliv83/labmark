@@ -1,0 +1,9 @@
+@import '@/styles/__settings';
+
+.logo {
+  color: $whiteText;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: toRem(32);
+  background-color: transparent;
+}

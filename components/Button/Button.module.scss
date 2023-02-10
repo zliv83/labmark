@@ -1,0 +1,11 @@
+@import '@/styles/__settings';
+
+.button {
+  background-color: $primary;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: toRem(20);
+  color: $whiteText;
+  font-size: toRem(16);
+  font-weight: 100;
+}

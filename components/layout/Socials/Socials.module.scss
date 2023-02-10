@@ -1,0 +1,8 @@
+@import '@/styles/__settings';
+
+.socials {
+  display: flex;
+  gap: 1.5rem;
+  color: $darkShade;
+  justify-content: center;
+}

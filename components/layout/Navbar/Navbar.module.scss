@@ -1,0 +1,14 @@
+@import '@/styles/__settings';
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: toRem(16) toRem(32);
+  background-color: $primary;
+
+  .icon {
+    color: $lightShade;
+  }
+}

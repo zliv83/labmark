@@ -1,0 +1,31 @@
+@import '@/styles/__settings';
+
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 70%;
+  background-color: $lightShade;
+  padding: 1rem;
+  overflow: auto;
+  z-index: 101;
+  transition: $backdropTransition;
+
+  .logo {
+    color: $primary;
+  }
+
+  .navLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .socials {
+    margin-top: 4rem;
+  }
+}
