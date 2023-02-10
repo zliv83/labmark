@@ -1,0 +1,27 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "folderTemplates.structures": [
+    {
+      "name": "Custom NextJS Template",
+      "structure": [
+        {
+          "fileName": "index.jsx",
+          "template": "JS Functional Component"
+        },
+        {
+          "fileName": "<FTName>.module.scss",
+          "template": "Sass Module"
+        }
+      ]
+    }
+  ],
+  "folderTemplates.fileTemplates": {
+    "JS Functional Component": [
+      "import styles from './<FTName>.module.scss';",
+      "",
+      "export default function <FTName>() {}"
+    ],
+    "Sass Module": ["@import '@/styles/__settings';"]
+  }
+}
