@@ -2,11 +2,14 @@
 
 .navbar {
   display: flex;
+  position: sticky;
+  top: 0;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: toRem(16) toRem(32);
   background-color: $primary;
+  z-index: 9;
 
   .icon {
     color: $lightShade;

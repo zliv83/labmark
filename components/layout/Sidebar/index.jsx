@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-expressions */
 import { useContext } from 'react';
 
 import {
@@ -16,6 +17,8 @@ import Socials from '../Socials';
 
 export default function Sidebar() {
   const { sidebarOpen, sidebarToggle } = useContext(SidebarContext);
+
+  sidebarOpen && (document.body.style.overflow = 'hidden');
 
   const links = [
     {

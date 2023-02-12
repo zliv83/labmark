@@ -3,11 +3,13 @@
 .sideBar {
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
+  height: 100%;
   width: 70%;
+  box-shadow: toRem(2) 0 toRem(3) rgba(0, 0, 0, 0.5);
   background-color: $lightShade;
   padding: 1rem;
   overflow: auto;
