@@ -6,7 +6,7 @@
   color: $text;
   width: 100%;
   padding: 1rem;
-  gap: 1rem;
+  gap: 1.5rem;
   align-items: center;
 
   .copyright {
@@ -16,6 +16,6 @@
   .divider {
     height: 0;
     width: 60%;
-    border-top: 1px solid $darkShade;
+    border-top: 1px solid $primary;
   }
 }

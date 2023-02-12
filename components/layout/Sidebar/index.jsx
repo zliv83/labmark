@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-expressions */
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 
 import {
   faCircleInfo,
@@ -17,6 +17,12 @@ import Socials from '../Socials';
 
 export default function Sidebar() {
   const { sidebarOpen, sidebarToggle } = useContext(SidebarContext);
+
+  useEffect(() => {
+    sidebarOpen
+      ? (document.body.style.overflow = 'hidden')
+      : (document.body.style.overflow = 'scroll');
+  }, [sidebarOpen]);
 
   sidebarOpen && (document.body.style.overflow = 'hidden');
 
