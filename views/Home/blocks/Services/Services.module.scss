@@ -3,22 +3,10 @@
 .services {
   display: grid;
   grid-template-columns: 1fr;
-  gap: toRem(10);
+  gap: $blockGap;
 
   @include desktop() {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .titleContainer {
-    display: flex;
-    height: 10rem;
-    @include center();
-
-    .title {
-      font-size: 2.5rem;
-      font-weight: 500;
-      color: $primary;
-    }
   }
 
   .exteriors {

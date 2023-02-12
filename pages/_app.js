@@ -6,7 +6,7 @@ import Layout from '@/components/layout';
 import '@/styles/globals.scss';
 import { SidebarProvider } from '@/lib/SidebarProvider';
 
-const mont = Lato({
+const font = Lato({
   subsets: ['latin'],
   weight: ['100', '300', '400', '700', '900'],
 });
@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }) {
           content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"
         />
       </Head>
-      <main id="modal-root" className={mont.className}>
+      <main id="modal-root" className={font.className}>
         <SidebarProvider>
           <Layout>
             <Component {...pageProps} />

@@ -1,0 +1,26 @@
+@import '@/styles/__settings';
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: $blockGap;
+  background-color: $darkShade;
+  padding-bottom: $blockGap;
+
+  .blockTitle {
+    background-color: $darkShade;
+    color: $whiteText;
+  }
+
+  .avatar1 {
+    background-image: url('../../../../public/redHeadAvatar.jpg');
+  }
+
+  .avatar2 {
+    background-image: url('../../../../public/brunetteAvatar.jpg');
+  }
+
+  .avatar3 {
+    background-image: url('../../../../public/noseRingAvatar.jpg');
+  }
+}

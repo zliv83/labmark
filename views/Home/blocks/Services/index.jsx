@@ -1,3 +1,4 @@
+import BlockTitle from '@/components/BlockTitle';
 import ServiceCard from './ServiceCard';
 import styles from './Services.module.scss';
 
@@ -35,9 +36,7 @@ export default function Services() {
 
   return (
     <div className={styles.services}>
-      <div className={styles.titleContainer}>
-        <span className={styles.title}>Our Services</span>
-      </div>
+      <BlockTitle title="Our Services" />
       {serviceCards}
     </div>
   );

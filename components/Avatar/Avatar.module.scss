@@ -1,0 +1,11 @@
+@import '@/styles/__settings';
+
+.avatar {
+  width: toRem(70);
+  height: toRem(70);
+  border-radius: 50%;
+  background-color: $lightShade;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

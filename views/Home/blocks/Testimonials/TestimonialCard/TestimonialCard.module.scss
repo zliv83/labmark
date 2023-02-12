@@ -1,0 +1,32 @@
+@import '@/styles/__settings';
+
+.testimonialCard {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: auto;
+  background-color: $lightShade;
+  @include center();
+  padding: 1rem;
+
+  .blockquotes {
+    max-width: toRem(600);
+    margin: toRem(10) toRem(30);
+    padding: toRem(25);
+    color: $darkShade;
+
+    &::before {
+      content: '\201C';
+      font-size: toRem(100);
+      color: $lightAccent;
+      display: block;
+      margin-bottom: toRem(-50);
+      margin-top: toRem(-20);
+    }
+
+    .text {
+      font-size: 1.15rem;
+      line-height: 1.5rem;
+    }
+  }
+}
