@@ -35,7 +35,7 @@ export default function Socials() {
   ];
 
   const socialLinks = socials.map((social) => (
-    <Link href={social.href} key={social.key}>
+    <Link href={social.href} key={social.key} target="_blank">
       <FontAwesomeIcon icon={social.icon} className={styles.icons} />
     </Link>
   ));

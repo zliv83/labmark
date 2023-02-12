@@ -25,5 +25,6 @@ module.exports = {
     'import/no-unresolved': 'off',
     'object-curly-newline': 'off',
     'import/extensions': 'off',
+    'react/jsx-one-expression-per-line': 'off',
   },
 };

@@ -1,0 +1,21 @@
+@import '@/styles/__settings';
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  color: $text;
+  width: 100%;
+  padding: 1rem;
+  gap: 1rem;
+  align-items: center;
+
+  .copyright {
+    text-align: center;
+  }
+
+  .divider {
+    height: 0;
+    width: 60%;
+    border-top: 1px solid $darkShade;
+  }
+}
