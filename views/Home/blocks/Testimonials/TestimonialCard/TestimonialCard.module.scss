@@ -5,7 +5,7 @@
   flex-direction: column;
   gap: 1rem;
   height: auto;
-  background-color: $darkAccent;
+  background-color: $lightShade;
   @include center();
   padding: 1rem;
 
@@ -18,7 +18,7 @@
     &::before {
       content: '\201C';
       font-size: toRem(100);
-      color: $darkShade;
+      color: $lightAccent;
       display: block;
       margin-bottom: toRem(-50);
       margin-top: toRem(-20);

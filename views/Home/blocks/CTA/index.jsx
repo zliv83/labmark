@@ -4,7 +4,7 @@ export default function CTA() {
   return (
     <div className={styles.container}>
       <span className={styles.title}>Columbus&apos; roofing specialist</span>
-      <span className={styles.subtitle}>Trusted Exterior Contractors</span>
+      <span className={styles.subtitle}>#1 Kazakhstan Contractor!</span>
       <span className={styles.content}>
         Your roof and siding is your home&apos;s main defense against storm
         damage. Let Labmark Exteriors walk you through the best options for your

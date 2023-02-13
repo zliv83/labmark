@@ -4,7 +4,8 @@
   display: flex;
   flex-direction: column;
   gap: $blockGap;
-  background-color: $lightShade;
+  background-color: $darkShade;
+  padding-bottom: $blockHeight;
 
   .avatar1 {
     background-image: url('../../../../public/redHeadAvatar.jpg');

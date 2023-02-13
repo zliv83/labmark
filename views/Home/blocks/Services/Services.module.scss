@@ -4,10 +4,10 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: $blockGap;
-  background-color: $darkShade;
+  background-color: $lightShade;
 
   .blockTitle {
-    color: $lightShade;
+    color: $primary;
   }
 
   @include desktop() {

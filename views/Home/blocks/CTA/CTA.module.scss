@@ -3,19 +3,20 @@
 .container {
   display: flex;
   flex-direction: column;
-  padding: toRem(16) toRem(20);
+  padding: toRem(16) toRem(20) toRem(60) toRem(20);
   gap: 1rem;
+  background-color: $grey;
 
   .title {
     font-size: toRem(28);
     font-weight: 400;
-    color: $primary;
+    color: $darkShade;
   }
 
   .subtitle {
-    font-size: toRem(16);
+    font-size: toRem(20);
     font-weight: 400;
-    color: $primary;
+    color: $darkShade;
   }
 
   .content {
