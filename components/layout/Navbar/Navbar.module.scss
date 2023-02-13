@@ -30,6 +30,7 @@
   @include navbar();
   background-color: $primary;
   box-shadow: toRem(1) toRem(2) toRem(5) toRem(1) rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
 }
 
 .navbarInvert {
