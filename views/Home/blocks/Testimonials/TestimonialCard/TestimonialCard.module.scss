@@ -5,7 +5,7 @@
   flex-direction: column;
   gap: 1rem;
   height: auto;
-  background-color: $lightShade;
+  background-color: $darkAccent;
   @include center();
   padding: 1rem;
 
@@ -18,7 +18,7 @@
     &::before {
       content: '\201C';
       font-size: toRem(100);
-      color: $lightAccent;
+      color: $darkShade;
       display: block;
       margin-bottom: toRem(-50);
       margin-top: toRem(-20);
@@ -31,8 +31,9 @@
   }
 
   .credit {
-    font-weight: 900;
+    font-weight: 500;
     margin-left: 50%;
+    color: $darkShade;
 
     &::before {
       content: '\2014\0020';

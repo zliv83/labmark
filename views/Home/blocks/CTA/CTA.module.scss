@@ -1,0 +1,26 @@
+@import '@/styles/__settings';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: toRem(16) toRem(20);
+  gap: 1rem;
+
+  .title {
+    font-size: toRem(28);
+    font-weight: 400;
+    color: $primary;
+  }
+
+  .subtitle {
+    font-size: toRem(16);
+    font-weight: 400;
+    color: $primary;
+  }
+
+  .content {
+    font-size: toRem(14);
+    font-weight: 400;
+    color: $darkShade;
+  }
+}

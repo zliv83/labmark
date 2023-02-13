@@ -1,5 +1,11 @@
+import Link from 'next/link';
+
 import styles from './Logo.module.scss';
 
 export default function Logo({ className }) {
-  return <span className={`${styles.logo} ${className}`}>labmark</span>;
+  return (
+    <Link href="/">
+      <span className={`${styles.logo} ${className}`}>labmark</span>
+    </Link>
+  );
 }

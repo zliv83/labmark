@@ -24,8 +24,6 @@ export default function Sidebar() {
       : (document.body.style.overflow = 'scroll');
   }, [sidebarOpen]);
 
-  sidebarOpen && (document.body.style.overflow = 'hidden');
-
   const links = [
     {
       href: '/',
@@ -34,17 +32,18 @@ export default function Sidebar() {
       key: 1,
     },
     {
-      href: '/contact',
-      title: 'Contact',
-      icon: faEnvelope,
-      key: 2,
-    },
-    {
       href: '/services',
       title: 'Services',
       icon: faBellConcierge,
+      key: 2,
+    },
+    {
+      href: '/contact',
+      title: 'Contact',
+      icon: faEnvelope,
       key: 3,
     },
+
     {
       href: '/about',
       title: 'About',

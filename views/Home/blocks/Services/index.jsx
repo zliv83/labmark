@@ -36,7 +36,7 @@ export default function Services() {
 
   return (
     <div className={styles.services}>
-      <BlockTitle title="Our Services" />
+      <BlockTitle title="Our Services" className={styles.blockTitle} />
       {serviceCards}
     </div>
   );

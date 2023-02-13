@@ -5,6 +5,7 @@
   height: $blockHeight;
   @include center();
   color: $primary;
+  text-align: center;
 
   .title {
     font-size: 2.5rem;

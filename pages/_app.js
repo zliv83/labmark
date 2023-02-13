@@ -1,8 +1,6 @@
 import Head from 'next/head';
 import { Lato } from '@next/font/google';
 
-import Layout from '@/components/layout';
-
 import '@/styles/globals.scss';
 import { SidebarProvider } from '@/lib/SidebarProvider';
 
@@ -22,9 +20,7 @@ export default function App({ Component, pageProps }) {
       </Head>
       <main id="modal-root" className={font.className}>
         <SidebarProvider>
-          <Layout>
-            <Component {...pageProps} />
-          </Layout>
+          <Component {...pageProps} />
         </SidebarProvider>
       </main>
     </>

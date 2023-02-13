@@ -23,11 +23,16 @@
 
 .navbar {
   @include navbar();
-  background-color: transparent;
+  background-color: $primary;
 }
 
 .navbarTrigger {
   @include navbar();
   background-color: $primary;
   box-shadow: toRem(1) toRem(2) toRem(5) toRem(1) rgba(0, 0, 0, 0.2);
+}
+
+.navbarInvert {
+  @include navbar();
+  background-color: transparent;
 }

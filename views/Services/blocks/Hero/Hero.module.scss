@@ -1,0 +1,46 @@
+@import '@/styles/__settings';
+
+.background {
+  display: flex;
+  flex-direction: column;
+  @include center();
+  position: relative;
+  background-image: url('../../../../public/services.jpeg');
+  height: toRem(500);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+
+  .overlay {
+    @include overlay();
+  }
+
+  .titleContainer {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+
+    .title {
+      color: $whiteText;
+      z-index: 3;
+      font-size: toRem(50);
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .subtitle {
+      color: $whiteText;
+      z-index: 3;
+      font-size: toRem(20);
+      font-weight: 300;
+      text-align: center;
+    }
+
+    .button {
+      z-index: 3;
+    }
+  }
+}

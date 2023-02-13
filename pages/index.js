@@ -3,6 +3,7 @@ import Head from 'next/head';
 
 import styles from './Home.module.scss';
 import Home from '@/views/Home';
+import Layout from '@/components/layout';
 
 export default function HomePage() {
   return (
@@ -10,7 +11,9 @@ export default function HomePage() {
       <Head>
         <title>Home Page</title>
       </Head>
-      <Home />
+      <Layout invert>
+        <Home />
+      </Layout>
     </div>
   );
 }
