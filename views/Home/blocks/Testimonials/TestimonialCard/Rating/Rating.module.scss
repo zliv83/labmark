@@ -1,0 +1,11 @@
+@import '@/styles/__settings';
+
+.rating {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+
+  .checked {
+    color: orange;
+  }
+}

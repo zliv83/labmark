@@ -3,7 +3,7 @@
 .testimonialCard {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
   height: auto;
   background-color: $lightShade;
   @include center();
@@ -27,6 +27,15 @@
     .text {
       font-size: 1.15rem;
       line-height: 1.5rem;
+    }
+  }
+
+  .credit {
+    font-weight: 900;
+    margin-left: 50%;
+
+    &::before {
+      content: '\2014\0020';
     }
   }
 }

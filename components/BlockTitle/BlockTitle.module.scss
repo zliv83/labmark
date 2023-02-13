@@ -2,7 +2,7 @@
 
 .titleContainer {
   display: flex;
-  height: 10rem;
+  height: $blockHeight;
   @include center();
   color: $primary;
 
