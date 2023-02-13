@@ -1,17 +1,33 @@
 @import '@/styles/__settings';
 
-.navbar {
+@mixin navbar() {
   display: flex;
   position: sticky;
   top: 0;
   flex-direction: row;
+  max-height: $navbar-height;
   align-items: center;
   justify-content: space-between;
   padding: toRem(16) toRem(32);
-  background-color: $primary;
   z-index: 9;
 
   .icon {
     color: $lightShade;
+    cursor: pointer;
+
+    &:hover {
+      color: $hover;
+    }
   }
+}
+
+.navbar {
+  @include navbar();
+  background-color: transparent;
+}
+
+.navbarTrigger {
+  @include navbar();
+  background-color: $primary;
+  box-shadow: toRem(1) toRem(2) toRem(5) toRem(1) rgba(0, 0, 0, 0.2);
 }

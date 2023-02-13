@@ -6,4 +6,9 @@
   text-transform: uppercase;
   font-size: toRem(32);
   background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    color: $hover;
+  }
 }

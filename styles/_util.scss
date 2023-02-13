@@ -1,4 +1,5 @@
 @import './_mixins.scss';
+@import './colors.scss';
 
 $desktop: 768px;
 $button-card-hover-transform: translateY(-0.125rem);
@@ -12,3 +13,5 @@ $transition-speed: 0.3s;
 $navbar-height: 5.5rem;
 $backdropTransition: all 0.5s ease-in-out;
 $blockGap: toRem(10);
+$navbar-height: calc(toRem(39) + toRem(16) + toRem(16));
+$hover: $darkAccent;

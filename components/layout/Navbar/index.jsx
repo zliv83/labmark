@@ -14,12 +14,7 @@ export default function Navbar() {
   const { sidebarOpen, sidebarToggle } = useContext(SidebarContext);
 
   return (
-    <div
-      className={styles.navbar}
-      style={{
-        boxShadow: trigger ? '1px 2px 5px 1px rgba(0, 0, 0, 0.2)' : 'none',
-      }}
-    >
+    <div className={trigger ? styles.navbarTrigger : styles.navbar}>
       <Logo />
       <FontAwesomeIcon
         className={styles.icon}
