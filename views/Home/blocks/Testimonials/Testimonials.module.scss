@@ -7,6 +7,10 @@
   background-color: $darkShade;
   padding-bottom: $blockHeight;
 
+  .blockTitle {
+    color: $whiteText;
+  }
+
   .avatar1 {
     background-image: url('../../../../public/redHeadAvatar.jpg');
   }
